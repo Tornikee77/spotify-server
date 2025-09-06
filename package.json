@@ -1,0 +1,29 @@
+{
+  "name": "spotify-server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tornikee77/spotify-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tornikee77/spotify-server/issues"
+  },
+  "homepage": "https://github.com/Tornikee77/spotify-server#readme",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "mongoose": "^8.18.0"
+  }
+}
