@@ -5,13 +5,13 @@ const albumSchema = new mongoose.Schema(
     title: {
       type: String,
       trim: true,
-      require: [true, "Please provide a title"],
+      required: [true, "Please provide a title"],
       maxlength: [40, "title shoud not be more than 40 characters "],
       minlength: [3, "title shoud not be at least 3 characters "],
     },
     artist: {
       type: mongoose.Schema.Types.ObjectId,
-      require: [true, "Please provide an artist"],
+      required: [true, "Please provide an artist"],
       ref: "Artist",
     },
     releaseDate: { type: String, default: Date.now() },
@@ -28,7 +28,7 @@ const albumSchema = new mongoose.Schema(
     ],
     genre: {
       type: String,
-      require: [true, "Please provide a genre"],
+      required: [true, "Please provide a genre"],
       trim: true,
     },
     likes: {
